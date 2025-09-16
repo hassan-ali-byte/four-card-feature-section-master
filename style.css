@@ -112,7 +112,7 @@ h2 {
 }
 .card-header p {
   margin-top: 0.5rem;
-  font-size: 0.749rem;
+  font-size: clamp(0.75rem, 0.571rem + 0.476vw, 1rem);
 }
 
 /*  layout styling */
@@ -218,7 +218,7 @@ footer{
 /* media queries  */
 @media (min-width: 43em) {
   .page-wrapper {
-    max-width: 950px;
+    max-width: 1150px;
   }
   .feature-cards {
     grid-template-columns: repeat(2, 1fr);
